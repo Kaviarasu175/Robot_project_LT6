@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.3 on win32)" generated="20220505 12:09:10.862" rpa="false" schemaversion="3">
+<suite id="s1" name="Selenium Swite" source="C:\Users\kavit\PycharmProjects\robot_project\selenium_swite">
+<suite id="s1-s1" name="Demo1 Swite" source="C:\Users\kavit\PycharmProjects\robot_project\selenium_swite\demo1_swite.robot">
+<test id="s1-s1-t1" name="TC1" line="6">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<arg>path</arg>
+<arg>C:\\Users\\kavit\\Downloads\\driver\\chromedriver_win32</arg>
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<msg timestamp="20220505 12:09:11.032" level="INFO">Environment variable 'path' set to value 'C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\MinGW\mingw32\bin;C:\MinGW\mingw32\bin;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\MinGW\mingw32\bin;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\MinGW\bin;C:\Program Files\Git\cmd;C;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\kavit\AppData\Local\Programs\Python\Python310;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\kavit\AppData\Local\Programs\Python\Python310;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\kavit\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\kavit\AppData\Local\Microsoft\WindowsApps;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\Program Files\Cppcheck;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1\bin;;C:\Users\kavit\Downloads\driver\chromedriver_win32'.</msg>
+<status status="PASS" starttime="20220505 12:09:11.032" endtime="20220505 12:09:11.032"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://www.facebook.com/</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220505 12:09:11.032" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20220505 12:09:11.032" endtime="20220505 12:09:18.213"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=email</arg>
+<arg>kavi@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220505 12:09:18.214" level="INFO">Typing text 'kavi@gmail.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20220505 12:09:18.214" endtime="20220505 12:09:18.270"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=pass</arg>
+<arg>welcome</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20220505 12:09:18.270" level="INFO">Typing password into text field 'id=pass'.</msg>
+<msg timestamp="20220505 12:09:18.295" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220505 12:09:18.325" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220505 12:09:18.270" endtime="20220505 12:09:18.325"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220505 12:09:18.326" level="INFO">Clicking element 'name=login'.</msg>
+<status status="PASS" starttime="20220505 12:09:18.326" endtime="20220505 12:09:18.359"/>
+</kw>
+<status status="PASS" starttime="20220505 12:09:11.031" endtime="20220505 12:09:18.359"/>
+</test>
+<status status="PASS" starttime="20220505 12:09:10.879" endtime="20220505 12:09:18.361"/>
+</suite>
+<suite id="s1-s2" name="Demo2 Swite" source="C:\Users\kavit\PycharmProjects\robot_project\selenium_swite\demo2_swite.robot">
+<test id="s1-s2-t1" name="TC2" line="6">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<arg>path</arg>
+<arg>C:\\Users\\kavit\\Downloads\\driver\\chromedriver_win32</arg>
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<msg timestamp="20220505 12:09:18.368" level="INFO">Environment variable 'path' set to value 'C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\MinGW\mingw32\bin;C:\MinGW\mingw32\bin;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\MinGW\mingw32\bin;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\MinGW\bin;C:\Program Files\Git\cmd;C;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\kavit\AppData\Local\Programs\Python\Python310;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\kavit\AppData\Local\Programs\Python\Python310;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\kavit\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\kavit\AppData\Local\Microsoft\WindowsApps;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\Program Files\Cppcheck;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1\bin;;C:\Users\kavit\Downloads\driver\chromedriver_win32;C:\Users\kavit\Downloads\driver\chromedriver_win32'.</msg>
+<status status="PASS" starttime="20220505 12:09:18.368" endtime="20220505 12:09:18.368"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://www.facebook.com/</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220505 12:09:18.369" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20220505 12:09:18.368" endtime="20220505 12:09:23.088"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220505 12:09:23.089" level="INFO">Clicking element 'locator'.</msg>
+<msg timestamp="20220505 12:09:23.092" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.54)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002DB8F3+2406643]
+	Ordinal0 [0x0026AF31+1945393]
+	Ordinal0 [0x0015C748+837448]
+	Ordinal0 [0x001442B0+737968]
+	Ordinal0 [0x001A6C09+1141769]
+	Ordinal0 [0x001B3E22+1195554]
+	Ordinal0 [0x001A4096+1130646]
+	Ordinal0 [0x0017E636+976438]
+	Ordinal0 [0x0017F546+980294]
+	GetHandleVerifier [0x00549612+2498066]
+	GetHandleVerifier [0x0053C920+2445600]
+	GetHandleVerifier [0x00374F2A+579370]
+	GetHandleVerifier [0x00373D36+574774]
+	Ordinal0 [0x00271C0B+1973259]
+	Ordinal0 [0x00276688+1992328]
+	Ordinal0 [0x00276775+1992565]
+	Ordinal0 [0x0027F8D1+2029777]
+	BaseThreadInitThunk [0x761C6739+25]
+	RtlGetFullPathName_UEx [0x77BE8E7F+1215]
+	RtlGetFullPathName_UEx [0x77BE8E4D+1165]
+	(No symbol) [0x00000000]
+</msg>
+<msg timestamp="20220505 12:09:23.095" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.54)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002DB8F3+2406643]
+	Ordinal0 [0x0026AF31+1945393]
+	Ordinal0 [0x0015C748+837448]
+	Ordinal0 [0x001442B0+737968]
+	Ordinal0 [0x001A6C09+1141769]
+	Ordinal0 [0x001B3E22+1195554]
+	Ordinal0 [0x001A4096+1130646]
+	Ordinal0 [0x0017E636+976438]
+	Ordinal0 [0x0017F546+980294]
+	GetHandleVerifier [0x00549612+2498066]
+	GetHandleVerifier [0x0053C920+2445600]
+	GetHandleVerifier [0x00374F2A+579370]
+	GetHandleVerifier [0x00373D36+574774]
+	Ordinal0 [0x00271C0B+1973259]
+	Ordinal0 [0x00276688+1992328]
+	Ordinal0 [0x00276775+1992565]
+	Ordinal0 [0x0027F8D1+2029777]
+	BaseThreadInitThunk [0x761C6739+25]
+	RtlGetFullPathName_UEx [0x77BE8E7F+1215]
+	RtlGetFullPathName_UEx [0x77BE8E4D+1165]
+	(No symbol) [0x00000000]
+</msg>
+<status status="FAIL" starttime="20220505 12:09:23.089" endtime="20220505 12:09:23.105"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=firstname</arg>
+<arg>kavi</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220505 12:09:23.106" endtime="20220505 12:09:23.106"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=lastname</arg>
+<arg>Arasu</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220505 12:09:23.107" endtime="20220505 12:09:23.107"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=reg_email_</arg>
+<arg>kaviarasu@gmail.com</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220505 12:09:23.107" endtime="20220505 12:09:23.107"/>
+</kw>
+<status status="FAIL" starttime="20220505 12:09:18.367" endtime="20220505 12:09:23.108">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.54)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002DB8F3+2406643]
+	Ordinal0 [0x0026AF31+1945393]
+	Ordinal0 [0x0015C748+837448]
+	Ordinal0 [0x001442B0+737968]
+	Ordinal0 [0x001A6C09+1141769]
+	Ordinal0 [0x001B3E22+1195554]
+	Ordinal0 [0x001A4096+1130646]
+	Ordinal0 [0x0017E636+976438]
+	Ordinal0 [0x0017F546+980294]
+	GetHandleVerifier [0x00549612+2498066]
+	GetHandleVerifier [0x0053C920+2445600]
+	GetHandleVerifier [0x00374F2A+579370]
+	GetHandleVerifier [0x00373D36+574774]
+	Ordinal0 [0x00271C0B+1973259]
+	Ordinal0 [0x00276688+1992328]
+	Ordinal0 [0x00276775+1992565]
+	Ordinal0 [0x0027F8D1+2029777]
+	BaseThreadInitThunk [0x761C6739+25]
+	RtlGetFullPathName_UEx [0x77BE8E7F+1215]
+	RtlGetFullPathName_UEx [0x77BE8E4D+1165]
+	(No symbol) [0x00000000]
+</status>
+</test>
+<status status="FAIL" starttime="20220505 12:09:18.362" endtime="20220505 12:09:23.112"/>
+</suite>
+<status status="FAIL" starttime="20220505 12:09:10.863" endtime="20220505 12:09:23.116"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Selenium Swite">Selenium Swite</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Demo1 Swite">Selenium Swite.Demo1 Swite</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s2" name="Demo2 Swite">Selenium Swite.Demo2 Swite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220505 12:09:23.092" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=101.0.4951.54)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002DB8F3+2406643]
+	Ordinal0 [0x0026AF31+1945393]
+	Ordinal0 [0x0015C748+837448]
+	Ordinal0 [0x001442B0+737968]
+	Ordinal0 [0x001A6C09+1141769]
+	Ordinal0 [0x001B3E22+1195554]
+	Ordinal0 [0x001A4096+1130646]
+	Ordinal0 [0x0017E636+976438]
+	Ordinal0 [0x0017F546+980294]
+	GetHandleVerifier [0x00549612+2498066]
+	GetHandleVerifier [0x0053C920+2445600]
+	GetHandleVerifier [0x00374F2A+579370]
+	GetHandleVerifier [0x00373D36+574774]
+	Ordinal0 [0x00271C0B+1973259]
+	Ordinal0 [0x00276688+1992328]
+	Ordinal0 [0x00276775+1992565]
+	Ordinal0 [0x0027F8D1+2029777]
+	BaseThreadInitThunk [0x761C6739+25]
+	RtlGetFullPathName_UEx [0x77BE8E7F+1215]
+	RtlGetFullPathName_UEx [0x77BE8E4D+1165]
+	(No symbol) [0x00000000]
+</msg>
+</errors>
+</robot>

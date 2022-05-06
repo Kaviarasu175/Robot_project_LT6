@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.3 on win32)" generated="20220506 04:08:28.875" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo4 Swite" source="C:\Users\kavit\PycharmProjects\robot_project\selenium_swite\demo4_swite.robot">
+<test id="s1-t1" name="TC3" line="6">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<arg>path</arg>
+<arg>C:\\Users\\kavit\\Downloads\\driver\\chromedriver_win32</arg>
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<msg timestamp="20220506 04:08:29.255" level="INFO">Environment variable 'path' set to value 'C:\Program Files\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\MinGW\mingw32\bin;C:\MinGW\mingw32\bin;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\MinGW\mingw32\bin;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\MinGW\bin;C:\Program Files\Git\cmd;C;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\kavit\AppData\Local\Programs\Python\Python310;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\kavit\AppData\Local\Programs\Python\Python310;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\kavit\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\kavit\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\kavit\AppData\Local\Microsoft\WindowsApps;C:\Users\kavit\AppData\Local\Programs\Microsoft VS Code\bin;C:\MinGW\bin;C:\Program Files\Cppcheck;;C:\Program Files\JetBrains\PyCharm Community Edition 2022.1\bin;;C:\Users\kavit\Downloads\driver\chromedriver_win32'.</msg>
+<status status="PASS" starttime="20220506 04:08:29.255" endtime="20220506 04:08:29.255"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://www.salesforce.com/in/form/signup/freetrial-sales/</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220506 04:08:29.256" level="INFO">Opening browser 'chrome' to base url 'https://www.salesforce.com/in/form/signup/freetrial-sales/'.</msg>
+<status status="PASS" starttime="20220506 04:08:29.256" endtime="20220506 04:08:40.363"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=UserFirstName</arg>
+<arg>kavi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220506 04:08:40.364" level="INFO">Typing text 'kavi' into text field 'name=UserFirstName'.</msg>
+<status status="PASS" starttime="20220506 04:08:40.364" endtime="20220506 04:08:40.478"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=UserLastName</arg>
+<arg>Arasu</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220506 04:08:40.479" level="INFO">Typing text 'Arasu' into text field 'name=UserLastName'.</msg>
+<status status="PASS" starttime="20220506 04:08:40.479" endtime="20220506 04:08:40.587"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=UserEmail</arg>
+<arg>kavi@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220506 04:08:40.588" level="INFO">Typing text 'kavi@gmail.com' into text field 'name=UserEmail'.</msg>
+<status status="PASS" starttime="20220506 04:08:40.588" endtime="20220506 04:08:40.706"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>name=UserTitle</arg>
+<arg>IT Manager</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220506 04:08:40.707" level="INFO">Selecting options from selection list 'name=UserTitle' by label IT Manager.</msg>
+<status status="PASS" starttime="20220506 04:08:40.707" endtime="20220506 04:08:40.777"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=CompanyName</arg>
+<arg>DOXY</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220506 04:08:40.778" level="INFO">Typing text 'DOXY' into text field 'name=CompanyName'.</msg>
+<status status="PASS" starttime="20220506 04:08:40.778" endtime="20220506 04:08:40.870"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>name=CompanyEmployees</arg>
+<arg>101 - 500 employees</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220506 04:08:40.871" level="INFO">Selecting options from selection list 'name=CompanyEmployees' by label 101 - 500 employees.</msg>
+<status status="PASS" starttime="20220506 04:08:40.870" endtime="20220506 04:08:40.949"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>name=CompanyCountry</arg>
+<arg>United Kingdom</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20220506 04:08:40.950" level="INFO">Selecting options from selection list 'name=CompanyCountry' by label United Kingdom.</msg>
+<status status="PASS" starttime="20220506 04:08:40.949" endtime="20220506 04:08:41.024"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//div[@class="checkbox-ui"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220506 04:08:41.025" level="INFO">Clicking element 'xpath=//div[@class="checkbox-ui"]'.</msg>
+<status status="PASS" starttime="20220506 04:08:41.025" endtime="20220506 04:08:41.080"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=start my free trial</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220506 04:08:41.081" level="INFO">Clicking element 'name=start my free trial'.</msg>
+<status status="PASS" starttime="20220506 04:08:41.080" endtime="20220506 04:08:41.160"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath=//span[contains(@id,'userphone')]</arg>
+<arg>1234567891</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220506 04:08:41.160" level="INFO">Verifying element 'xpath=//span[contains(@id,'userphone')]' contains exact text '1234567891'.</msg>
+<msg timestamp="20220506 04:08:41.286" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220506 04:08:41.287" level="FAIL">Element with locator 'xpath=//span[contains(@id,'userphone')]' not found.</msg>
+<status status="FAIL" starttime="20220506 04:08:41.160" endtime="20220506 04:08:41.291"/>
+</kw>
+<status status="FAIL" starttime="20220506 04:08:29.253" endtime="20220506 04:08:41.292">Element with locator 'xpath=//span[contains(@id,'userphone')]' not found.</status>
+</test>
+<status status="FAIL" starttime="20220506 04:08:28.878" endtime="20220506 04:08:41.293"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Demo4 Swite">Demo4 Swite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
