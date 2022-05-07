@@ -20,4 +20,7 @@ TC8
     Select From List By Label    id=form_message_status    New
     Select From List By Index    id=users     1
     Input Text    id=note    hello
-    Click Element    id=cancel
+    Click Element    id=newnote
+    Element Should Contain    id=error_reply_to     Please choose a patient
+    Unselect Frame
+    Close Browser
